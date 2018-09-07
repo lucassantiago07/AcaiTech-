@@ -20,6 +20,7 @@ public class ProdutoDATA {
     private float PrecoVenda;
     private int Quantidade;
     private int Id;
+    private Timestamp Data;
 
     public ProdutoDATA() {
     }
@@ -74,6 +75,10 @@ public class ProdutoDATA {
 
     public Timestamp getDataCadastro() {
         return Timestamp.from(Instant.now());
+    }
+    
+    public void setDataCadastro(Timestamp Data){
+        this.Data = Data;
     }
 
 }
